@@ -1,13 +1,14 @@
 package ch03.ex04;
 
-public  interface IntSequence {   
+@FunctionalInterface
+public interface IntSequence {   
    
+    int next();
+    
     default boolean hasNext(){
         // By default, sequences are infinite 
         return true;        
-    };
-
-    int next();
+    }
 
     public static IntSequence of(Integer... integers) {        
          return new IntSequence() {
@@ -30,8 +31,5 @@ public  interface IntSequence {
     public static IntSequence constant(int c){        
         return () -> c; 
     }
-    
-   
-    
 
 }

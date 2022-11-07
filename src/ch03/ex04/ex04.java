@@ -20,15 +20,13 @@ public class ex04 {
 
         while(values.hasNext()){
             System.out.print(values.next()+", ");
-        }
-        System.out.println("");
+        }        
 
         IntSequence constant = IntSequence.constant(1);
-
         
+        System.out.print("\n"+constant.next()+", ");
         System.out.print(constant.next()+", ");
-        System.out.print(constant.next()+", ");
-        System.out.print(constant.next()+", ");
+        System.out.print(constant.next());
         
     }
 }
