@@ -1,7 +1,9 @@
 package ch01;
 
 import java.io.Console;
-import java.util.logging.ConsoleHandler;
+
+/*Write a program that reads an integer and prints it in binary, octal, and
+hexadecimal. Print the reciprocal as a hexadecimal floating-point number. */
 
 public class ex01 {
     public static void main(String[] args) {
